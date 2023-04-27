@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="../Assignment1/style.css">
+    <script src="Assignment1.js"></script>
+</head>
+<body>
+    <h2 id="time"></h2>
+    <script>
+        const hour = new Date().getHours(); 
+        let greeting;
+        
+        if (hour < 18) {
+          greeting = "Good day!";
+        } else {
+          greeting = "Good evening!";
+        }
+        
+        document.getElementById("time").innerHTML = greeting;
+        </script>
+    <h1>Learning Javascript</h1>
+    <p>Are you interested in learning Javascript?
+    </p>
+    <div class=button onclick="myFunction()">Click here!</button>
+</div>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let username = prompt("Please enter your name", "");
+  let coding = prompt("Please enter your favorite coding language","");
+  alert("Hello " + username + ". " +  coding + " is a great coding language! " + "! I hope you enjoy learning Web Design as much as I do.");
+}
+</script>
+</body>
+</html>

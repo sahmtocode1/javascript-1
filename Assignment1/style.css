@@ -1,0 +1,16 @@
+.button {
+    position: absolute;
+    top:30%;
+    background-color:hsl(81, 48%, 49%);
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding: 10px;
+    min-height:30px; 
+    min-width: 120px;
+    text-align: center;
+  }
+
+  .button:active {
+    background-color: #ffbf00;
+}
