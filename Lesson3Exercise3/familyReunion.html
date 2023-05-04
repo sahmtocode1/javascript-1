@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Reunion Form</title>
+    <style>
+        form{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #firstName,
+        #lastName {
+            margin-bottom: 10px;
+        }
+        #guestAge {
+            margin-bottom: 10px;
+            margin-left: 3%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Family Reunion Attendees List</h1>
+    <form name="reunionForm" onsubmit="return addAttendee();">
+        <label for="firstName">First Name</label>
+        <input type=""text name="fname" id="firstName"></br>
+        <label for="lastName">Last Name</label>
+        <input type=""text name="lname" id="lastName"></br>
+        <label for="guestAge">Age</label>
+        <input type=""text name="gage" id="guestAge"></br>
+        <button type="submit">Save Attendee</button>
+    </form>
+    <h2>People attending</h2>
+    <ul id="attendees"></ul>
+    <script src="./familyReunion.js"></script>
+</body>
+</html>

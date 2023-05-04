@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background-color: green;
+            margin-top: 50px;
+        }
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="myHeading"></h1>
+    <h2 onclick="changeText(this)">Change Text</h2>
+    <div id="myDiv"></div>
+    <button onclick="changeColor()">Change of Color</button>
+    <button id="myBtn">Display Date</button>
+    <button id ="myTime">The Time</button>
+    <button onclick="move()">Animate Me!</button>
+    <p id="time"></p>
+    <p id="myDate"></p>
+    <p class="para-1">test</p>
+    <p class="para-1">test</p>
+    <p class="para-1">test</p>
+    <div id="container">
+        <div id="animate"></div>
+    </div>
+    <script src="demo.js"></script>
+</body>
+</html>
