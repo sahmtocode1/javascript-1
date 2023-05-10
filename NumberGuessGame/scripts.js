@@ -42,6 +42,10 @@ function numberGuessGame(min,max){
             message = "Your number is too high! Try again!";
             guess = parseInt(prompt(message));
         }
+        if (isNaN(guess)){
+            break;
+        }
+        
     } while (guess !== num);
     message = "Congratulations!";
     updateDOM(message, "green");
