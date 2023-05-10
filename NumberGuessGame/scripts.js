@@ -45,9 +45,9 @@ function numberGuessGame(min,max){
         if (isNaN(guess)){
             break;
         }
-        
+
     } while (guess !== num);
-    message = "Congratulations!";
+    message = "Congratulations! &#128512";
     updateDOM(message, "green");
     }
     
