@@ -1,35 +1,52 @@
 function submitData(){
-    document.getElementById("min,max");
-    if (min < 1, max > 100){
-    updateDOM("ERROR", "red");
-} else {
-    numberGuessGame(min,max)
-}
+    let min = Number(guessForm.min.value);
+    let max = Number(guessForm.max.value);
+   
+    if (min == "" || max ==""){
+        let value ="Both fields must be filled in.";
+        let color = "red";
+        updateDOM(value,color);
+        return false;
+    }
+
+    if (min > max){
+    let value ="The min value cannot be greater than the max value.";
+        let color = "red";
+        updateDOM(value,color);
+        return false;
+    }
+
+numberGuessGame(min,max);
+    return false;
 }
 
 function updateDOM(value,color){
     document.getElementById("output").innerHTML=value;
-    element.style.backgroundColor = "#00FF00";
+    document.getElementById("output").style.color = color;
 }
 
 function numberGuessGame(min,max){
-    let num = randomNumber(min, max)
-    let guess = null;
+    let num = Math.ceil(randomNumber(min,max));
+    console.log(min);
+    console.log(max);
+    console.log(num);
+    let message = "I'm thinking of a number between " + min + " and " + max + " try to guess it.";
+    let guess;
     do {
-        guess = parseInt(prompt("I'm thinking of a number between 1-100. Try to guess it."));
-        document.getElementById("guessForm");
-        if (min < 1) {
-            console.log("Your guess is too low"); 
+        guess = parseInt(prompt(message));
+        if(guess < num){
+            message = "Your number is too low! Try again!";
+            guess = parseInt(prompt(message));
         }
-        if (max > 100) {
-            console.log("Your guess is too high");
+        if(guess > num){
+            message = "Your number is too high! Try again!";
+            guess = parseInt(prompt(message));
         }
-                
-    } while (min >= 1 , max <=100)
-    updateDOM("Congratulations!", "green");
-}
-
-
+    } while (guess !== num);
+    message = "Congratulations!";
+    updateDOM(message, "green");
+    }
+    
 function randomNumber(min,max){
     return Math.random() * (max-min) + min;
 }

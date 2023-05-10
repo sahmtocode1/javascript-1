@@ -9,15 +9,15 @@
 </head>
 <body>
     <h1>Number Guessing Game</h1>
-    <p>Please enter a low number and a high number for our guessing game range (1-100)</p>
-    <form name="guessForm" onsubmit="submitData(); return false">
+    <p>Please enter a low number and a high number for our guessing game.</p>
+    <form name="guessForm" onsubmit="return submitData();">
         <label for="min">Bottom of Range</label>
-        <input type="text" name="min"><br>
+        <input type="text" name="min" id="min"/><br>
         <label for="max">Top of Range</label>
-        <input type="text" name="max"><br>
+        <input type="text" name="max" id="max"/><br>
         <button type="submit">Play Game!</button>
     </form>
     <div id="output"></div>
-    <script src="./scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
