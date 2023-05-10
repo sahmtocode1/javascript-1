@@ -5,8 +5,8 @@ body {
 h1 {
     font-family: cursive;
     text-align: center;
-    margin-top: 0%;
 }
+
 p {
     text-align: center;
 }
@@ -42,7 +42,7 @@ input {
   }
 
   #grad1 {
-    height: 1000px;
+    height: 500px;
     background-color: rgb(132, 133, 139); 
     background-image: linear-gradient(to bottom right, rgb(77, 111, 173), rgb(39, 33, 124));
   }
