@@ -3,14 +3,14 @@ function submitData(){
     let max = Number(guessForm.max.value);
    
     if (min == "" || max ==""){
-        let value ="Both fields must be filled in.";
+        let value ="Both fields must be filled in. &#128533";
         let color = "red";
         updateDOM(value,color);
         return false;
     }
 
     if (min > max){
-    let value ="The min value cannot be greater than the max value.";
+    let value ="The min value cannot be greater than the max value. &#128533";
         let color = "red";
         updateDOM(value,color);
         return false;
