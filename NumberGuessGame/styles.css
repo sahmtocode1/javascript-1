@@ -3,8 +3,9 @@ body {
 }
 
 h1 {
+    font-family: cursive;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 0%;
 }
 p {
     text-align: center;
@@ -14,8 +15,8 @@ form {
 }
 
 button {
-    background-color: #2457a3; 
-    border: none;
+    background-color: #0c0d0e; 
+    border-color: aliceblue;
     color: white;
     padding: 15px;
     text-align: center;
@@ -25,6 +26,26 @@ button {
     margin-left: 1%;
     cursor: pointer;
 }
+
+input {
+    padding: 3px;
+    box-shadow: 3px 3px 5px grey;
+    font-size: 14px;
+    font-weight: 600;
+    width: 300px;
+  }
+ 
+  label {
+    color: #17156d;
+    font-weight: bold;
+    display: block;
+  }
+
+  #grad1 {
+    height: 1000px;
+    background-color: rgb(132, 133, 139); 
+    background-image: linear-gradient(to bottom right, rgb(77, 111, 173), rgb(39, 33, 124));
+  }
 
 
 
